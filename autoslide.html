@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+      /* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  width: 100%;
+  height: 140px;
+  background-color: #b5eaea;
+  color: #ff036A;
+  margin-top: 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header h4 {
+  font-size: 18px;
+}
+
+.text {
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  font-family: cursive;
+  font-size: larger;
+  margin: 30px 20%;
+  box-shadow: 0 0 10px black;
+  padding: 20px;
+  background-color: white;
+} */
+
+#eventSelect {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+
+/* .headlink:hover {
+color: #ff036A; 
+}
+
+.headlink{
+text-decoration: none;
+color: black;
+}
+
+.home, .about, .contact, .new {
+text-align: center;
+padding: 10px 30px; 
+}
+
+.home{
+padding-left: 20px;
+}
+
+.contact {
+padding-right: 20px;
+}
+
+
+span {
+cursor: pointer;
+padding: 10px 20px; 
+}
+
+.navbar {
+display: flex;
+justify-content: center; 
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+display: block; 
+height: 100px;
+max-width: 200px;
+} */
+
+
+
+.parent{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin-top: 0px;
+}
+
+.slider {
+    height: 400px;
+    margin-left: 50px;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 40);
+    animation: scroll 100s linear infinite;
+    /* margin-top: 0px; */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px*40));
+    }
+}
+
+.slide {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.im {
+    width: 80px;
+    height: 80px;
+    transition: transform 1s;
+}
+
+.im:hover {
+    transform: scale(1.5);
+}
+
+
+#l{
+    padding-left: 80px;
+    padding-right: 100px;
+    text-align: center;
+    padding-top: 12px;
+}
+#h{
+    padding-top: 12px;
+}
+
+.n{
+    
+    padding-bottom: 5px;
+    margin-top: 5px;
+
+   
+
+}
+
+
+.navbar{
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    height: 50px;
+    max-width:300px;
+    padding-left: 40px;
+    
+}
+#c{
+    padding-left: 90px;
+    text-align: center;
+    padding-top: 12px;
+}
+#a{
+    padding-left: 70px;
+    text-align: center;
+    padding-top: 12px;
+}
+#i{
+    height: 70px;
+    width: 80px;
+    padding-left: 35%;
+}
+span{
+    cursor: pointer;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.pattern{
+    background-image: url('p2.jpg');
+    height: 200px;
+    width: 1500px;
+    border-radius: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: #FF0060;
+    font-size: 80px;
+}
+section{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFBCBC;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+p{
+    font-weight: bolder;
+    font-family: cursive;
+}
+select{
+    padding-left: 400px;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px ;
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: #FFFFC7;
+    border-radius: 4px;
+    font-family: cursive;
+    color: #114232;
+    font-weight: bolder;
+
+
+}
+/* .column img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .column img:hover {
+    transform: scale(1.1);
+  }
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  } */
+
+  /* .image-gallery img {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+  } */
+/* .sam1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ii{
+    height: 500px;
+    width: 300px;
+} */
+h2{
+    padding-left: 900px;
+    font-size: 35px;
+    padding-bottom: 39px;
+    color: #A03C78;
+}
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  } */
+  
+  /* Create four equal columns that sits next to each other */
+  /* .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  } */
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+    </style>
+</head>
+<header>
+    <nav class="navbar" >
+        <span class="n" id="l"><a href="login.html" target="_blank" rel="noopener noreferrer">LOGIN</a></span>
+        <span class="n" id="h"><a href="event_manage.html">HOME</a></span>
+        <span class="n" id="logo"><img src="logo1.png" id="i"></span>
+        <span class="n" id="c"><a href="contact.html"target="_blank" rel="noopener noreferrer">CONTACT</a></span>
+        <span class="n" id="a"><a href="about.html"target="_blank" rel="noopener noreferrer">ABOUT</a></span>
+    </nav>
+
+</header>
+<body>
+
+    <div class="pattern">
+        <h1>Design Chronicle</h1>
+        <h2>~Capturing Event Magic</h2>
+    </div>   
+    <section>
+        <p class="aboutus">
+            Welcome to our world of extraordinary events and unforgettable moments. At Event Management, we believe in turning ordinary days into extraordinary celebrations. With passion, creativity,
+             and attention to detail, we craft experiences that linger in the hearts and minds of our clients and their guests.
+        </p>
+        <p class="event-text">
+            Every event is a canvas waiting to be painted with emotions, laughter, and joy. We understand the significance of special days,
+             and our dedicated team works tirelessly to ensure that each moment is unique and tailored to your dreams and aspirations.
+        </p>
+        
+        <select id="eventSelect" onchange="change()">
+            <option selected>--Select--</option>
+            <option value="Birthday">Birthday Party</option>  
+            <option value="marriage">Marriage</option>    
+            <option value="haldi">Haldi & Mehandi</option> 
+            <option value="saree">Half Saree</option>
+            
+        </select>
+    </section>
+
+        <div class="parent">
+    
+            <div class="slider">
+              <div class="slide-track">
+    
+                  <div class="slide">
+                      <img class="im" src="Anais-Events-6.jpg" alt="">
+                  </div>
+    
+                  <div class="slide">
+                      <img class="im" src="bday1.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                      <img class="im" src="bday2.webp" alt="">
+                  </div>
+                  <div class="slide">
+                      <img class="im" src="bday3.avif" alt="">
+                  </div>
+                  <div class="slide">
+                      <img class="im" src="bday4.webp" alt="">
+                  </div>
+                  <div class="slide">
+                      <img class="im" src="bdayhd1.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                      <img class="im" src="bdayhd2.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                      <img class="im" src="cak2.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                      <img class="im" src="cake1.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                      <img class="im" src="cake2.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                      <img class="im" src="haldihd1.webp" alt="">
+                  </div>
+                  <div class="slide">
+                    <img class="im" src="haldihd2.webp" alt="">
+                </div>
+                <div class="slide">
+                  <img class="im" src="haldihd3.webp" alt="">
+              </div>
+              <div class="slide">
+                <img class="im" src="haldihd4.webp" alt="">
+            </div>
+            <div class="slide">
+              <img src="half1.jpg" class="im" alt="">
+          </div>
+          <div class="slide">
+            <img src="half2.webp" alt="" class="im">
+          </div>
+          <div class="slide">
+            <img src="half3.webp" alt="" class="im">
+          </div>
+          <div class="slide">
+            <img src="marriagehd1avif.avif" alt="" class="im">
+          </div>
+          <div class="slide">
+            <img src="marriagehd2.avif" alt="" class="im">
+          </div>
+          <div class="slide">
+            <img src="marriagehd3jpg.jpg" alt="" class="im">
+          </div>
+          <div class="slide">
+            <img src="marriagehd4.webp" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex1jpg.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex2.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex3.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex4.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex5.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex6.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex7.webp" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex8.avif" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex9.jpeg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex9.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="ex10.jpeg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="f1.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="f2jpg.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="hf1.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="hf10.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="hf12.jpg" alt=""class="im">
+          </div>
+          <div class="slide">
+            <img src="hf13.jpg" alt=""class="im">
+          </div>
+          
+          
+              </div>
+          </div>
+          
+            </div>
+
+      <script>
+        function change(){
+            var opt=document.getElementById("eventSelect");
+            switch(opt.value){
+                case "Birthday":
+                    window.location.href="birthday.html";
+                    break;
+                case "marriage":
+                    window.location.href="marriage.html";
+                    break;
+                case "haldi":
+                    window.location.href="haldi.html";
+                    break;
+                case "saree":
+                    window.location.href="haldSaree.html";
+                    break;
+            }
+        }
+      </script>
+</body>
+</html>

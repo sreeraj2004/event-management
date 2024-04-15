@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Gallery</title>
+  <link rel="icon" href="logo.png" type="image/icon type">
+  <style>
+    
+    .image-gallery {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .image-gallery img {
+      max-width: 30%;
+      height: auto;
+      margin-bottom: 10px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <h1>Event Gallery</h1>
+    </div>
+  </header>
+  <div id="imageGallery" class="image-gallery"></div>
+  
+
+  <script>
+    function displayEventImages(images) {
+      var gallery = document.getElementById("imageGallery");
+
+      images.forEach(function(imageSrc) {
+        var image = document.createElement("img");
+        image.src = imageSrc;
+        image.alt = "Event Image";
+        image.style.maxWidth = "30%";
+        image.style.height = "auto";
+        image.style.marginBottom = "10px";
+        image.style.border = "2px solid #fff";
+        image.style.borderRadius = "5px";
+        gallery.appendChild(image);
+      });
+    }
+
+    // Retrieve the event parameter from the URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var selectedEvent = urlParams.get('event');
+
+    
+    switch (selectedEvent) {
+      case "wedding":
+        displayEventImages(["img8.avif", "img9.avif", "img10.jpg", "img16.jpg", "img18.jpg", "img21.jpg", "img24.jpg", "img25.jpg"]);
+        break;
+      case "birthday":
+        displayEventImages(["img1.webp", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "img7.jpg", "img22.jpg", "img23.jpg", "img26.jpg", "img27.jpg", "img28.jpg"]);
+        break;
+      case "kitty":
+        
+        displayEventImages(["corporate_image1.jpg", "corporate_image2.jpg", "corporate_image3.jpg"]);
+        break;
+      case "haldi":
+        displayEventImages(["img11.webp", "img12.webp", "img13.webp", "img14.webp", "img15.webp", "img17.jpg", "img19.jpg", "img20.jpg"]);
+        break;
+      default:
+        
+        displayEventImages(["default1.jpg", "default2.jpg", "default3.jpg"]);
+        break;
+    }
+  </script>
+</body>
+</html>

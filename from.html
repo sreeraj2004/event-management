@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Book Event</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+<body style="background-image: url(copyfm3.jpg);width: 1550px;background-repeat: no-repeat;justify-content: center;align-items: center;">
+    <blockquote class="block">
+        <fieldset class="field">
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="event" class="text">Event type</label></td>
+                        <td>
+                            <select id="event">
+                                <option selected>--Select--</option>
+                                <option>Birthday</option>
+                                <option>Marriage</option>
+                                <option>Haldi and Mehandi</option>
+                                <option>Half Saree</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="date" class="date">Event Date</label>
+                        </td>
+                        <td><input type="date" id="dateEvent"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name" class="text">Your name</label></td>
+                        <td><input type="text" placeholder="Enter full name" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phn" class="text">Mobile Number</label></td>
+                        <td><input type="number" placeholder="Enter mobile number" id="phn" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city" class="text">City</label></td>
+                        <td>
+                            <select id="city">
+                                <option selected>--Select--</option>
+                                <option>Vijayawada</option>
+                                <option>Bengaluru</option>
+                                <option>Vizag</option>
+                                <option>Hyderabad</option>
+                                <option>Delhi</option>
+                                <option>Chandigarh</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="text">Address</label></td>
+                        <td><textarea cols="10" rows="6" class="text" placeholder="Enter address" id="address" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label class="text">Customization</label></td>
+                        <td><textarea cols="10" rows="4" class="text" placeholder="Add additional requirements(if any)" id="customization"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="file" class="text">File</label></td>
+                        <td><input type="file" id="file" required></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" id="sub">Submit</button></td>
+                        <td><button type="button" onclick="res()">Reset</button></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </blockquote>
+
+
+    <div class="fade" >
+    <h2 class="f2"></h2></div>
+    <div class="saveDate"></div>
+    <script>
+        $('#sub').click(function(e){
+                e.preventDefault();
+                sub();
+            })
+        function sub() {
+            var event = document.getElementById("event").value;
+            var name = document.getElementById("name").value;
+            var mobile = document.getElementById("phn").value;
+            var address = document.getElementById("address").value;
+            var file = document.getElementById("file").value;
+           
+            if (event !== "" && name !== "" && mobile !== "" && address !== "" && file !== "") {
+                alert("Thank you! " + name + " your submission has been successfully received for the event:- " + event);
+                $('.fade').fadeIn();
+                setTimeout(function(){
+                $(".saveDate").fadeIn();
+            },10000);
+                
+                $('.f2').text("~Your trust in us is valued...");
+    
+            } 
+            else {
+                alert("All fields are mandatory. Please fill them to complete the event booking process.");
+            } 
+
+            setTimeout(function(){
+                $('.fade').fadeOut();
+            },5000);
+            setTimeout(function(){
+                $('.saveDate').fadeOut();
+            },15000);
+        
+        }
+        
+        function res() {
+            document.getElementById("event").selectedIndex = 0;
+            document.getElementById("name").value = "";
+            document.getElementById("phn").value = "";
+            document.getElementById("city").selectedIndex = 0;
+            document.getElementById("address").value = "";
+            document.getElementById("customization").value = "";
+            document.getElementById("file").value = "";
+            document.getElementById("dateEvent").value="";
+            alert("Reset successful..... Ready for a fresh start?");
+        }
+
+    </script>
+</body>
+</html>

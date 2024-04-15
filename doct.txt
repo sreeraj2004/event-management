@@ -1,0 +1,60 @@
+
+    <script>
+         function changeEventImages() {
+      var select = document.getElementById("eventSelect");
+      var gallery = document.getElementById("imageGallery");
+
+      gallery.innerHTML = "";
+
+      switch (select.value) {
+        case "wedding":
+          addImage("img8.avif");
+          addImage("img9.avif");
+          addImage("img10.jpg");
+          addImage("img16.jpg");
+          addImage("img18.jpg");
+          addImage("img21.jpg");
+          addImage("img24.jpg");
+          addImage("img25.jpg");
+          break;
+        case "birthday":
+          addImage("img1.webp");
+          addImage("img2.jpg");
+          addImage("img3.jpg");
+          addImage("img4.jpg");
+          addImage("img5.jpg");
+          addImage("img6.jpg");
+          addImage("img7.jpg");
+          addImage("img22.jpg");
+          addImage("img23.jpg");
+          addImage("img26.jpg");
+          addImage("img27.jpg");
+          addImage("img28.jpg");
+          break;
+        case "KittyParty":
+          addImage("corporate_image1.jpg");
+          addImage("corporate_image2.jpg");
+          addImage("corporate_image3.jpg");
+          break;
+        case "haldi":
+          addImage("img11.webp");
+          addImage("img12.webp");
+          addImage("img13.webp");
+          addImage("img14.webp");
+          addImage("img15.webp");
+          addImage("img17.jpg");
+          addImage("img19.jpg");
+          addImage("img20.jpg");
+      }
+    }
+
+    function addImage(imageSrc) {
+      var gallery = document.getElementById("imageGallery");
+      var image = document.createElement("img");
+      image.src = imageSrc;
+      gallery.appendChild(image);
+    }
+
+    
+    changeEventImages();
+    </script>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AboutUs</title>
+  <link rel="icon" href="logo.png" type="image/icon type">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .header {
+      width: 100%;
+      height: 140px;
+      background-color: #b5eaea;
+      color: #ff036A;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 60px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .header h4 {
+      font-size: 18px;
+    }
+
+    .text {
+      box-sizing: border-box;
+      border: 1px solid #fff;
+      font-family: cursive;
+      font-size: larger;
+      margin-bottom: 0;
+      margin: 30px 20%;
+      box-shadow: 0 0 10px black;
+      padding: 20px;
+      background-color: white;
+    }
+
+    #eventSelect {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+
+
+.headlink:hover {
+    color: #ff036A; 
+}
+
+.headlink{
+    text-decoration: none;
+    color: black;
+}
+
+.home, .about, .contact, .new {
+    text-align: center;
+    padding: 10px 30px; 
+}
+
+.home{
+    padding-left: 20px;
+}
+
+.contact {
+    padding-right: 20px;
+}
+
+
+span {
+    cursor: pointer;
+    padding: 10px 20px; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    display: block; 
+    height: 100px;
+    max-width: 200px;
+}
+
+
+
+.parent{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .slider {
+        
+        height: 400px;
+        margin-left: 50px;
+        position: relative;
+        width: 90%;
+        display: grid;
+        place-items: center;
+    }
+
+    .slide-track {
+        display: flex;
+        width: calc(300px * 40);
+        animation: scroll 35s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-250px*40));
+        }
+    }
+
+    .slide {
+        height: 200px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .im {
+        width: 300px;
+        height: 300px;
+        transition: transform 1s;
+    }
+
+    .im:hover {
+        transform: scale(1.5);
+    }
+
+   
+
+   
+  </style>
+</head>
+<body>
+  <center>
+    <header>
+      <nav class="navbar">
+          <span class="home"><a class="headlink" href="index.html">Home</a></span>
+          <span class="about"><a class="headlink" href="about.html" target="_blank">AboutUs</a></span>
+          <img  class="logo" src="logo.png" alt="logo">
+          <span class="contact"><a class="headlink" href="contact.html" target="_blank">ContactUs</a></span>
+          <span class="new"><a class="headlink" href="log.html" target="_blank">LogIn</a></span>
+      </nav>
+  </header>
+  </center>
+  <header>
+    <div class="header">
+      <h1>Design Chronicle</h1>
+      <h4>~Capturing Event Magic</h4>
+    </div>
+  </header>
+  <div class="text">
+    <p>Welcome to our world of extraordinary events and unforgettable moments. At Event Management, we believe in turning ordinary days into extraordinary celebrations. With passion, creativity, and attention to detail, we craft experiences that linger in the hearts and minds of our clients and their guests.</p>
+    <p>Every event is a canvas waiting to be painted with emotions, laughter, and joy. We understand the significance of special days, and our dedicated team works tirelessly to ensure that each moment is unique and tailored to your dreams and aspirations.</p>
+
+    <label for="eventSelect">Select Event:</label>
+    <select id="eventSelect" onchange="changeEventImages()">
+      <option value="---">----</option>
+      <option value="wedding">Wedding</option>
+      <option value="birthday">Birthday</option>
+      <option value="haldi">Haldi</option>
+      <option value="namingCermony">Naming Cermony</option>
+    </select>
+
+    <div id="imageGallery" class="image-gallery"></div>
+  </div>
+
+  <div class="parent">
+    
+  <div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+            <img class="im" src="img1.webp" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img4.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img5.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img6.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img7.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img8.avif" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img9.avif" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img10.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img class="im" src="img11.webp" alt="">
+        </div>
+        <div class="slide">
+          <img class="im" src="img12.webp" alt="">
+      </div>
+      <div class="slide">
+        <img class="im" src="img13.webp" alt="">
+    </div>
+    <div class="slide">
+      <img class="im" src="img14.webp" alt="">
+  </div>
+  <div class="slide">
+    <img src="img15.webp" class="im" alt="">
+</div>
+<div class="slide">
+  <img src="img16.jpg" alt="" class="im">
+</div>
+<div class="slide">
+  <img src="img17.jpg" alt="" class="im">
+</div>
+<div class="slide">
+  <img src="img18.jpg" alt="" class="im">
+</div>
+<div class="slide">
+  <img src="img19.jpg" alt="" class="im">
+</div>
+<div class="slide">
+  <img src="img20.webp" alt="" class="im">
+</div>
+<div class="slide">
+  <img src="img21.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img22.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img23.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img24.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img25.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img26.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img27.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img28.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img29.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img30.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img31.webp" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img32.webp" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img33.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img35.webp" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img36.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img37.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img38.jpg" alt=""class="im">
+</div>
+<div class="slide">
+  <img src="img40.jpeg" alt=""class="im">
+</div>
+
+
+    </div>
+</div>
+
+  </div>
+  <script>
+    function changeEventImages() {
+      var select = document.getElementById("eventSelect");
+
+      switch (select.value) {
+        case "wedding":
+          window.location.href = "wedding.html";
+          break;
+        case "birthday":
+          window.location.href = "birthday.html";
+          break;
+        case "namingCermony":
+          window.location.href = "naming.html";
+          break;
+        case "haldi":
+          window.location.href = "haldi.html";
+          break;
+      }
+    }
+  </script>
+</body>
+</html>

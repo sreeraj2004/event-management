@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="logo.png" type="image/icon type">
+</head>
+<body>
+    <center><header>
+        <nav class="navbar">
+            
+            <span class="home"><a class="headlink" href="index.html">Home</a></span>
+            <span class="about"><a class="headlink" href="about.html" target="_blank">AboutUs</a></span>
+            <img  class="logo" src="logo.png" alt="logo">
+            <span class="contact"><a class="headlink" href="contact.html" target="_blank">ContactUs</a></span>
+            <span class="new"><a class="headlink" href="log.html" target="_blank">LogIn</a></span>
+        </nav>
+    </header></center>
+    <section>
+        <img src="form_plain.jpg" alt="" class="bg">
+        <img src="girl.png" class="girl" alt="">
+        <div class="login">
+            <h2>Sign In</h2>
+            <div class="inputBox">
+                <input type="text" id="username" placeholder="Username">
+            </div>
+            <div class="inputBox">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="inputBox">
+                <input type="submit" onclick="submitt()" value="Login" id="btn">
+            </div>
+            <div class="group">
+                <a href="#">Forgetpassword</a>
+                <a href="#">SignUp</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        function submitt(){
+            var a = document.getElementById('username').value;
+            var b = document.getElementById('password').value;
+
+            var username = "sreeraj@gmail.com";
+            var password = "Sreeraj@2004";
+
+            if(a === username && b === password){
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

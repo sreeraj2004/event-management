@@ -1,0 +1,88 @@
+#container {
+    background-image: url('bg3.jpg');
+    height: 860px;
+    width: 100%; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.btnone{
+    background-color: rgb(243, 95, 120);
+    padding: 20px;
+    color: #fff;
+    font-size: larger;
+    border-radius: 30px;
+}
+
+.btnone:hover{
+    background-color: #EE4266;
+}
+
+.navbarone {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.headlink{
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    cursor: pointer;
+    padding: 10px 20px; 
+}
+
+.headlink:hover {
+    color: #ff036A; 
+}
+
+.logo {
+    display: block; 
+    height: 100px;
+    max-width: 200px;
+}
+
+.home, .about, .contact, .new {
+    text-align: center;
+    padding: 10px 30px; 
+}
+
+.home{
+    padding-left: 20px;
+}
+
+.contact {
+    padding-right: 20px;
+}
+
+
+.fieldone {
+    width: 550px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 3px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(243, 95, 120);
+}
+
+.legendone{
+    color: rgb(243, 95, 120);
+    font-size: 40px;
+    font-family: cursive;
+}
+
+
+
+
